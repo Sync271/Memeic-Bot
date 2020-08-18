@@ -25,7 +25,7 @@ class MM(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message, self_bot = True):
-        if message.author.id == 721451412331954306:
+        if message.author.id == "Your Bot ID":
             if message.content == '~random':
                 ctx = await self.client.get_context(message)
                 await random_logic(self,ctx)
